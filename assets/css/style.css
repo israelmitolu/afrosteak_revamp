@@ -1,20 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Cafe -  Coffee Shop and Bakery Template
-    Author: UIdeck
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
-
------------------------------------------------------------------------------------*/
 /*===========================
       01.COMMON css 
 ===========================*/
@@ -651,6 +634,9 @@ p {
 .navbar-brand {
   padding: 0;
 }
+.navbar-brand img {
+  max-width: 12rem;
+}
 
 .navbar-toggler {
   padding: 0;
@@ -1044,7 +1030,10 @@ p {
 ===========================*/
 .about_image img {
   border-radius: 5px;
-  width: 100%;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  object-fit: cover;
 }
 
 .about_content .about_title {
@@ -1241,71 +1230,64 @@ p {
 }
 
 /**********Gallery************/
-.gallery_active {
-  padding-bottom: 100px;
+.menu__container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
-.single_gallery .gallery_image {
+.menu__content {
   position: relative;
-}
-.single_gallery .gallery_image::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 24, 57, 0.78);
-  top: 0;
-  left: 0;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  transform: scale(0.95);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-.single_gallery:hover .gallery_content {
-  opacity: 1;
-  visibility: visible;
-}
-.single_gallery .gallery_image img {
-  width: 100%;
-}
-.single_gallery .gallery_content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  max-width: 375px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+  padding: 0.75rem;
 }
 
-.single_gallery .gallery_content .gallery_title {
-  color: #fff;
-  font-size: 24px;
+.menu__img {
+  width: 100px;
+  align-self: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.menu__name,
+.menu__preci {
   font-weight: 600;
+  color: #e55b1b;
 }
-.single_gallery .gallery_content p {
+
+.menu__name {
+  font-size: 0.95rem;
+}
+
+.menu__detail,
+.menu__preci {
+  font-size: 0.85rem;
+}
+
+.menu__detail {
+  margin-bottom: 0.5rem;
+}
+.button {
+  display: inline-block;
+  background-color: #e54e1b;
   color: #fff;
-  margin-top: 15px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
+.menu__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: 0.625rem 0.813rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+}
+
 /*===========================
      10.CONTACT css 
 ===========================*/
