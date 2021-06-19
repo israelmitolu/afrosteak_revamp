@@ -1006,22 +1006,22 @@ p {
 }
 
 /*===========================
-    03.COFFEE css 
+    03.specials css 
 ===========================*/
-.single_coffee .specials-image img {
+.single_specials .specials-image img {
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
 }
 
-.single_coffee .coffee_content {
+.single_specials .specials_content {
   margin-top: 25px;
 }
-.single_coffee .coffee_content .coffee_title {
+.single_specials .specials_content .specials_title {
   font-size: 20px;
   font-weight: 700;
 }
-.single_coffee .coffee_content p {
+.single_specials .specials_content p {
   margin-top: 15px;
 }
 
@@ -1279,6 +1279,10 @@ p {
   border-radius: 0.5rem;
   transition: 0.3s;
 }
+.button:hover {
+  color: white;
+  background: #f3531e;
+}
 .menu__button {
   position: absolute;
   bottom: 0;
@@ -1498,18 +1502,6 @@ p.form-message.error.form-message.error {
   color: #e54e1b;
 }
 
-.footer_instagram .instagram_image {
-  margin-left: -8px;
-  margin-right: -8px;
-  padding-top: 10px;
-}
-.footer_instagram .instagram_image a {
-  margin: 0 8px;
-  margin-top: 15px;
-}
-.footer_instagram .instagram_image a img {
-  border-radius: 5px;
-}
 /*===== BACK TO TOP =====*/
 .back-to-top {
   font-size: 20px;
